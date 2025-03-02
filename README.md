@@ -69,7 +69,7 @@
 
 ### 2. Работа с циклами
 
-Цикл `for`
+#### Цикл `for`
 
 ```php
 <h2 class="mb-3">Цикл for</h2>
@@ -88,7 +88,7 @@
 
 ![FOR](https://github.com/user-attachments/assets/51146904-12a6-498a-a6b3-3aece1a24e4c)
 
-Цикл `while`
+#### Цикл `while`
 
 ```php
  <h2 class="mb-3 mt-5">Цикл while</h2>
@@ -108,7 +108,7 @@
 
 ![while](https://github.com/user-attachments/assets/454598c9-eb0a-4b90-853f-b458b2a4a52f)
 
-Цикл `do-while`
+#### Цикл `do-while`
 
 ```php
 <h2 class="mb-3 mt-5">Цикл do-while</h2>
