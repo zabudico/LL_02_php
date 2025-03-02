@@ -171,11 +171,11 @@
 
 ## Список использованных источников
 
-  1. ![PHP: Управляющие конструкции](https://github.com/MSU-Courses/advanced-web-programming/blob/main/03_Data_Types/03_06_Control_Structures.md)
+  1. [PHP: Управляющие конструкции](https://github.com/MSU-Courses/advanced-web-programming/blob/main/03_Data_Types/03_06_Control_Structures.md)
 
-  2. ![PHP date() функция](https://www.php.net/manual/ru/function.date.php)
+  2. [PHP date() функция](https://www.php.net/manual/ru/function.date.php)
 
-  3. ![Bootstrap Документация](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  3. [Bootstrap Документация](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ## Дополнительные аспекты
 
