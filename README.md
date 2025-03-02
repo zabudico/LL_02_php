@@ -66,3 +66,68 @@
 
 ![EmployeeSchedule](https://github.com/user-attachments/assets/4cb9978a-c1c5-4a96-95a3-91d500912edc)
 
+
+### 2. Работа с циклами
+
+Цикл `for`
+
+```php
+<h2 class="mb-3">Цикл for</h2>
+    <pre class="bg-light p-3"><?php
+    $a = 0;
+    $b = 0;
+
+    for ($i = 0; $i <= 5; $i++) {
+        $a += 10;
+        $b += 5;
+        echo "Step $i: a = $a, b = $b\n";
+    }
+    echo "End of the loop: a = $a, b = $b";
+    ?></pre>
+```
+
+![FOR](https://github.com/user-attachments/assets/51146904-12a6-498a-a6b3-3aece1a24e4c)
+
+Цикл `while`
+
+```php
+ <h2 class="mb-3 mt-5">Цикл while</h2>
+    <pre class="bg-light p-3"><?php
+    $a = $b = 0;
+    $i = 0;
+
+    while ($i <= 5) {
+        $a += 10;
+        $b += 5;
+        echo "Step $i: a = $a, b = $b\n";
+        $i++;
+    }
+    echo "End of the loop: a = $a, b = $b";
+    ?></pre>
+```
+
+![while](https://github.com/user-attachments/assets/454598c9-eb0a-4b90-853f-b458b2a4a52f)
+
+Цикл `do-while`
+
+```php
+<h2 class="mb-3 mt-5">Цикл do-while</h2>
+    <pre class="bg-light p-3"><?php
+    $a = $b = 0;
+    $i = 0;
+
+    do {
+        $a += 10;
+        $b += 5;
+        echo "Step $i: a = $a, b = $b\n";
+        $i++;
+    } while ($i <= 5);
+    echo "End of the loop: a = $a, b = $b";
+    ?></pre>
+```
+
+![do-while](https://github.com/user-attachments/assets/ee2e6487-5fa2-46b0-9037-41acc0984447)
+
+
+
+
