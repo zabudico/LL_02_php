@@ -21,16 +21,48 @@
 - Генерация HTML-таблицы с Bootstrap
 
 ```php
-<?php
-$dayOfWeek = date('N'); // 1-7 (Понедельник-Воскресенье)
-$schedule = [
-  'John Styles' => [
-    'days' => [1, 3, 5], 
-    'time' => '8:00-12:00'
-  ],
-  'Jane Doe' => [
-    'days' => [2, 4, 6],
-    'time' => '12:00-16:00'
-  ]
-];
-?>
+ <?php
+    $sDayOfWeek = date('N'); 
+    $aEmployeeSchedule = [
+        'John Styles' => [
+            'days' => [1, 3, 5],
+            'time' => '8:00-12:00'
+        ],
+        'Jane Doe' => [
+            'days' => [2, 4, 6],
+            'time' => '12:00-16:00'
+        ]
+    ];
+    ?>
+```
+
+```html
+    <table class="table table-bordered w-50 mb-5">
+        <thead class="table-dark">
+            <tr>
+                <th>№</th>
+                <th>Фамилия Имя</th>
+                <th>График работы</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ([1 => 'John Styles', 2 => 'Jane Doe'] as $num => $name): ?>
+                <tr>
+                    <td><?= $num ?></td>
+                    <td><?= $name ?></td>
+                    <td>
+                        <?php
+                        $worker = $aEmployeeSchedule[$name];
+                        echo in_array($sDayOfWeek, $worker['days'])
+                            ? $worker['time']
+                            : 'Нерабочий день';
+                        ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+```
+
+![EmployeeSchedule](https://github.com/user-attachments/assets/4cb9978a-c1c5-4a96-95a3-91d500912edc)
+
